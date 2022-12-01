@@ -8,7 +8,8 @@
  * @n: integer
  * @next: points to the next node
  *
- * Description: singly linked list node structure for ALX project
+ * Description: singly linked list node structure for
+ * ALX project
  */
 typedef struct listint_s
 {
