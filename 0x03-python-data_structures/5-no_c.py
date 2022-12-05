@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def no_x(my_string):
+def no_c(my_string):
     length = len(my_string)
 
     j = 0
@@ -11,4 +11,4 @@ def no_x(my_string):
             new_string = new_string[:(i - j)] + my_string[(i + 1):]
             j += 1
 
-        return (new_string)
+    return (new_string)
