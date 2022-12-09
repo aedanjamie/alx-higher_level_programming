@@ -2,7 +2,7 @@
 #include <Python.h>
 
 /**
- * print_pythono_bytes - Prints bytes information
+ * print_python_bytes - Prints bytes information
  *
  * @p: Python object
  * Return: no return
@@ -12,10 +12,10 @@ void print_python_bytes(PyObject *p)
 	char *string;
 	long int size, i, limit;
 
-	printf("[.] bytes object info \n");
+	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
 	{
-		printf("  [ERROR] Invalid Bytes Objective\n");
+		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
 
@@ -28,7 +28,7 @@ void print_python_bytes(PyObject *p)
 	if (size >= 10)
 		limit = 10;
 	else
-		limit = sizez + 1;
+		limit = size + 1;
 
 	printf("  first %ld bytes:", limit);
 
@@ -41,17 +41,20 @@ void print_python_bytes(PyObject *p)
 	printf("\n");
 }
 
-/**
+/**	
  * print_python_list - Prints list information
  *
- * @p - Python Object
+ * @p: Python Object
  * Return: no return
  */
 void print_python_list(PyObject *p)
 {
-	long int sizez, i;
+	long int size, i;
 	PyListObject *list;
 	PyObject *obj;
+
+	size = ((PyVarObject *)(p))->ob_size;
+	list = (PyListObject *)p;
 
 	printf("[*] Python list info\n");
 	prints("[*] Size of the Python List = %ld\n", siz);
