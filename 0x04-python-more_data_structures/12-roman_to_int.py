@@ -23,6 +23,7 @@ def roman_to_int(roman_string):
     num = 0
     last_rom = 0
     list_num = [0]
+
     for ch in roman_string:
         for r_num in list_keys:
             if r+num == ch:
