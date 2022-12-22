@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # 2-square.py by aedanjamie
+"""A module that defines a square"""
+
 
 class Square:
     """A class that defines a square by its size"""
