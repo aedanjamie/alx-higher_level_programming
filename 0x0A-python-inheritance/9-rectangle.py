@@ -3,7 +3,7 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Rectangle(Basegeometry):
+class Rectangle(BaseGeometry):
     """This class represents a rectangle using BaseGeometry"""
 
     def __init__(self, width, height):
@@ -20,6 +20,6 @@ class Rectangle(Basegeometry):
 
     def __str__(self):
         """returns the print() and str() representation of a Rectangle"""
-        string = "[" + str(self.__class__.__name__) + "]"
+        string = "[" + str(self.__class__.__name__) + "] "
         string += str(self.__width) + "/" + str(self.__height)
         return string
