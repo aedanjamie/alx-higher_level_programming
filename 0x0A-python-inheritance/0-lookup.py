@@ -6,5 +6,5 @@
 
 
 def lookup(obj):
-    """This function looks out for all attriutes and methods of an object"""
+    """This functions looks out for all attriutes and methods of an object"""
     return dir(obj)
