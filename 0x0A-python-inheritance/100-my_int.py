@@ -3,10 +3,10 @@
 
 
 class MyInt(int):
-    """Inherits int operators == and !="""
+    """Inverts int operators == and !="""
 
-    def _eq__(self. vlaue):
-        """Override == operator with != bahviour"""
+    def __eq__(self, vlaue):
+        """Override == operator with != behaviour"""
         return self.real != value
 
     def __ne__(self, value):
