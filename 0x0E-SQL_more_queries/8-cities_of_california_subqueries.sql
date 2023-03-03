@@ -1,5 +1,5 @@
--- lists all the cities of CA in the database hbtn_0d_usa
--- results are ordered by ascending citied.id.
+-- lists all cities of CA in the database hbtn_0d_usa
+-- results are ordered by ascending cities.id.
 SELECT `id`, `name`
   FROM `cities`
  WHERE `state_id` IN
